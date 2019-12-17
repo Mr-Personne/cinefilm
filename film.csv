@@ -1,5 +1,5 @@
 
-﻿id,titre,description,sortie,genre,réalisateur
+id,titre,description,sortie,genre,réalisateur
 1,Bad Boys For life,"Les Bad Boys Mike Lowrey et Marcus Burnett se retrouvent pour résoudre une ultime affaire dans le très attendu Bad Boys For Life.",22 janvier 2020,"Action; Comédie","Adil El Arbi; Bilall Fallah"
 2,300,"Adapté du roman graphique de Frank Miller, 300 est un récit épique de la Bataille des Thermopyles, qui opposa en l'an - 480 le roi Léonidas et 300 soldats spartiates à Xerxès et l'immense armée perse. Face à un invincible ennemi, les 300 déployèrent jusqu'à leur dernier souffle un courage surhumain ; leur vaillance et leur héroïque sacrifice inspirèrent toute la Grèce à se dresser contre la Perse, posant ainsi les premières pierres de la démocratie.",21 mars 2007,"Péplum, Action, Guerre, Historique", Zack Snyder
 3,Insaisissable,"« Les Quatre Cavaliers », un groupe de brillants magiciens et illusionnistes, viennent de donner deux spectacles de magie époustouflants : le premier en braquant une banque sur un autre continent, le deuxième en transférant la fortune d’un banquier véreux sur les comptes en banque du public. Deux agents spéciaux du FBI et d’Interpol sont déterminés à les arrêter avant qu’ils ne mettent à exécution leur promesse de réaliser des braquages encore plus audacieux. Ils font appel à Thaddeus, spécialiste reconnu pour expliquer les tours de magie les plus sophistiqués. Alors que la pression s’intensifie, et que le monde entier attend le spectaculaire tour final des Cavaliers, la course contre la montre commence.",31 juillet 2013,"Thriller, Policier",Louis Leterrier
@@ -12,14 +12,8 @@ Mais c'est un chat – aux intentions obscures – aussi rusé que voleur qui va
 9,Fear and Loathing in Las Vegas,"A travers l'épopée à la fois comique et horrible vers Las Vegas du journaliste Raoul Duke et de son énorme avocat, le Dr. Gonzo, évocation caustique et brillante de l'année 1971 aux Etats-Unis, pendant laquelle les espoirs des années soixante et le fameux rêve américain furent balayés pour laisser la place à un cynisme plus politiquement correct.",19/08/1998,"Comédie, Aventure",Terry Gilliam
 
 10,Terminator 2 : Le jugement dernier, "En 2029, après leur échec pour éliminer Sarah Connor, les robots de Skynet programment un nouveau Terminator, le T-1000, pour retourner dans le passé et éliminer son fils John Connor, futur leader de la résistance humaine. Ce dernier programme un autre cyborg, le T-800, et l'envoie également en 1995, pour le protéger. Une seule question déterminera le sort de l'humanité : laquelle des deux machines trouvera John la première ?",16 octobre 1991, "SF,Action", James Cameron
-11,Indiana Jones et la dernière croisade, "L'archéologue aventurier Indiana Jones se retrouve aux prises avec un maléfique milliardaire.
-    Aux côtés de la cupide Elsa et de son père, il part à la recherche du Graal.", 18 octobre 1989, "Aventure, Action",Steven Spielberg
-
-12,Les Tontons Flingueurs, "Propriétaire d'une petite usine de tracteurs,
-                  Fernand Naudin mène une vie tranquille et sans histoire quand un télégramme l'appelle à Paris.
- 		          Il arrive à temps pour recueillir le dernier soupir d'un ami de jeunesse, Louis dit « le Mexicain »,
-                  qui lui confie ses affaires louches en même temps que la garde de sa fille Patricia. Et les ennuis commencent...", 27 novembre 1963, ",Comédie, Policier, Georges Lautner
-
+11,Indiana Jones et la dernière croisade, "L'archéologue aventurier Indiana Jones se retrouve aux prises avec un maléfique milliardaire. Aux côtés de la cupide Elsa et de son père, il part à la recherche du Graal.", 18 octobre 1989, "Aventure, Action",Steven Spielberg
+12,Les Tontons Flingueurs, "Propriétaire d'une petite usine de tracteurs, Fernand Naudin mène une vie tranquille et sans histoire quand un télégramme l'appelle à Paris. Il arrive à temps pour recueillir le dernier soupir d'un ami de jeunesse, Louis dit « le Mexicain », qui lui confie ses affaires louches en même temps que la garde de sa fille Patricia. Et les ennuis commencent...", 27 novembre 1963, "Comédie, Policier", Georges Lautner
 13,  Jurassic Park, "Ne pas réveiller le chat qui dort...
                   C'est ce que le milliardaire John Hammond aurait dû se rappeler avant de se lancer dans le "clonage" de dinosaures.
                   C'est à partir d'une goutte de sang absorbée par un moustique fossilisé que John Hammond 
