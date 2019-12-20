@@ -55,19 +55,19 @@ INSERT INTO `TABLE 1` (`films_id`, `genre_idgenre`) VALUES
 (7, 9),
 (8, 2),
 (9, 2),
-(9, 13),
+(9, 12),
 (10, 1),
 (10, 11),
 (11, 1),
-(11, 13),
+(11, 12),
 (12, 2),
 (12, 7),
 (13, 11),
-(13, 13),
+(13, 12),
 (14, 6),
 (14, 7),
 (15, 11),
-(15, 13);
+(15, 12);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
