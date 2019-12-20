@@ -1,0 +1,15 @@
+SELECT * FROM `films`
+INNER JOIN films_has_genre ON films_has_genre.films_id = films.id
+INNER JOIN genre ON genre.idgenre = films_has_genre.genre_idgenre
+INNER JOIN films_has_realisateur ON films_has_realisateur.films_id = films.id
+INNER JOIN realisateur ON realisateur.idrealisateur = films_has_realisateur.realisateur_idrealisateur
+ORDER BY `films`.`id` ASC
+
+
+
+//selection par genre (ex : comédie): 
+
+SELECT * FROM `films`
+INNER JOIN films_has_genre ON films_has_genre.films_id = films.id
+INNER JOIN genre ON genre.idgenre = films_has_genre.genre_idgenre WHERE nomGenre = "Comédie"
+ORDER BY `films`.`id` ASC
