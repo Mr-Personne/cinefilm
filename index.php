@@ -39,11 +39,6 @@ switch ($request) {
         // require __DIR__ . '/model/movies.php';
         // require __DIR__ . '/view/film.php';
         break;
-    // case 'film1' :
-    //     $_GET['filmId'] = 1;
-    //     require __DIR__ . '/model/movies.php';
-    //     require __DIR__ . '/view/film.php';
-    //     break;
     default:
         http_response_code(404);
         require __DIR__ . '/view/404.php';
