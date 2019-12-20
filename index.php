@@ -8,6 +8,8 @@ if (!isset($_GET['page'])){
     print_r($request);
 }
 else{
+    //cherche 
+    // $request = substr($_GET['page'], strlen($request)-1, 1);
     $request = $_GET['page'];
 }
 
@@ -15,6 +17,8 @@ else{
 echo __FILE__ . '<br>';
 // echo $_SERVER['REQUEST_URI']. '<br>';
 print_r($request);
+echo strlen($request);
+// echo substr($request, -1, 1);
 
 switch ($request) {
     case '/movie-website/fork/' :
@@ -23,17 +27,23 @@ switch ($request) {
     case '' :
         require __DIR__ . '/view/index-view.php';
         break;
-    case 'film9' :
-        $_GET['filmId'] = 9;
+    case $request != '/movie-website/fork/' :
+        $_GET['filmId'] = $request;
         require __DIR__ . '/controller/controller.php';
         // require __DIR__ . '/model/movies.php';
         // require __DIR__ . '/view/film.php';
         break;
-    case 'film1' :
-        $_GET['filmId'] = 1;
-        require __DIR__ . '/model/movies.php';
-        require __DIR__ . '/view/film.php';
+    case $request != '' :
+        $_GET['filmId'] = $request;
+        require __DIR__ . '/controller/controller.php';
+        // require __DIR__ . '/model/movies.php';
+        // require __DIR__ . '/view/film.php';
         break;
+    // case 'film1' :
+    //     $_GET['filmId'] = 1;
+    //     require __DIR__ . '/model/movies.php';
+    //     require __DIR__ . '/view/film.php';
+    //     break;
     default:
         http_response_code(404);
         require __DIR__ . '/view/404.php';
