@@ -14,10 +14,21 @@ else{
 }
 
 // echo $request . "<br>";
-echo __FILE__ . '<br>';
+//echo __FILE__ . '<br>';
+$tests = array(
+    $request
+);
+
+foreach ($tests as $element) {
+    if (is_numeric($element)) {
+        echo var_export($element, true) . " est numérique", PHP_EOL;
+    } else {
+        echo var_export($element, true) . " N'est PAS numérique", PHP_EOL;
+    }
+}
 // echo $_SERVER['REQUEST_URI']. '<br>';
-print_r($request);
-echo strlen($request);
+//print_r($request);
+//echo strlen($request);
 // echo substr($request, -1, 1);
 
 switch ($request) {
@@ -25,6 +36,9 @@ switch ($request) {
         require __DIR__ . '/view/index-view.php';
         break;
     case '' :
+        require __DIR__ . '/view/index-view.php';
+        break;
+    case '/' :
         require __DIR__ . '/view/index-view.php';
         break;
     case $request != '/movie-website/fork/' :
