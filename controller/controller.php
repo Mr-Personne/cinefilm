@@ -9,7 +9,7 @@
         $imgSize = getimagesize("public/images/affiche-".$allData[0]['id'].".png");
         $imgWidth = $imgSize[0];
         $imgHeight = $imgSize[1];
-        echo "lien affiche : " . $lienAffiche . "; imgW : " . $imgWidth . "; imgh : " . $imgHeight;
+        // echo "<p>lien affiche : " . $lienAffiche . "; imgW : " . $imgWidth . "; imgh : " . $imgHeight ."</p>";
         clearstatcache();
     }
     else if (file_exists("public/images/affiche-".$allData[0]['id'].".jpg")){
@@ -17,14 +17,14 @@
         $imgSize = getimagesize("public/images/affiche-".$allData[0]['id'].".jpg");
         $imgWidth = $imgSize[0];
         $imgHeight = $imgSize[1];
-        echo "lien affiche : " . $lienAffiche . "; imgW : " . $imgWidth . "; imgh : " . $imgHeight;
+        // echo "<p>lien affiche : " . $lienAffiche . "; imgW : " . $imgWidth . "; imgh : " . $imgHeight ."</p>";
         clearstatcache();
     }
     else{
         $lienAffiche = "";
         $imgWidth = "";
         $imgHeight = "";
-        echo "erreur, fichier inexistant ou pas en format jpg ou png";
+        // echo "<p>erreur, fichier inexistant ou pas en format jpg ou png</p>";
     }
     
     //ouvre et affiche la page du film avec les info recupérées
