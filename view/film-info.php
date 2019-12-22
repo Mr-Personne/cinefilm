@@ -12,7 +12,11 @@
 </head>
 <body>
     <h1><?php echo $allData[0]["titre"]; ?></h1>
-    <p><img src="public/images/affiche-<?php $allData[0]["titre"]?>.jpg" alt="affiche film"
+    <!-- le lien src vers l'image de l'affiche devrait changer en fonction du film selectioné
+        tant que vous enregistrez les images au bonne endroit et avec le nom "affiche-" + l'id du film 
+        qu'il a dans la database-->
+        <!-- ex : Bad Boys; id = 1  donc "affiche-1" -->
+    <p><img src="public/images/affiche-<?= $allData[0]["id"] ?>.jpg" alt="affiche film"
                 width="600" height="800" class="affiches"></p>
     <p>Année de sortie : <?php echo $allData[0]["annee-sortie"]; ?></p>
     <p>Réalisateur : <?php echo $realisateur; ?></p>
