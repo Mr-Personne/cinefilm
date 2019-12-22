@@ -8,7 +8,7 @@
 // il deviendra soit '' ou '/' en fonction de l'emplacement du fichier index.php)
 if (!isset($_GET['page'])){
     $request = $_SERVER['REQUEST_URI'];
-    print_r($request);
+    // print_r($request);
 }
 else{
 
