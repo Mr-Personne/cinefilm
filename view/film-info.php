@@ -12,6 +12,8 @@
 </head>
 <body>
     <h1><?php echo $allData[0]["titre"]; ?></h1>
+    <p><img src="public/images/affiche-<?php $allData[0]["titre"]?>.jpg" alt="affiche film"
+                width="600" height="800" class="affiches"></p>
     <p>Année de sortie : <?php echo $allData[0]["annee-sortie"]; ?></p>
     <p>Réalisateur : <?php echo $realisateur; ?></p>
 

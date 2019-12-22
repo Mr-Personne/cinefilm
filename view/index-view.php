@@ -28,7 +28,7 @@
 
         <a href="index.php?page=7">
             <div class="container-affiches">
-                <div><img src="public/images/once-upon-a-time-hollywood-affiche.jpg" alt="affiche film"
+                <div><img src="public/images/affiche-once-upon-a-time-hollywood.jpg" alt="affiche film"
                 width="405" height="600" class="affiches"></div>
                 <h3 class="text-align-center">Once Upon a Time… in Hollywood</h3>
             </div>
