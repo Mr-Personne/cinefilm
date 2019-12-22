@@ -1,7 +1,9 @@
 <?php
-    //a chercher infos dans database sur film selectionné
-    require __DIR__ . '/../model/movies.php';
 
+    //va chercher infos dans database sur film selectionné
+    require __DIR__ . '/../model/movies.php';
+    
+    
     //vérifie si le fichier pour l'image de l'affiche est existe bien en jpg ou png
     //si oui, met le lien vers l'image dans $lienAffiche et va chercher sa taille en largeur et hauteur
     if (file_exists("public/images/affiche-".$allData[0]['id'].".png")){
@@ -26,7 +28,9 @@
         $imgHeight = "";
         // echo "<p>erreur, fichier inexistant ou pas en format jpg ou png</p>";
     }
-    
-    //ouvre et affiche la page du film avec les info recupérées
+
+    //ouvre et affiche la page du film avec les infos recupérées
     require __DIR__ . '/../view/film-info.php';
+
+    
 ?>
