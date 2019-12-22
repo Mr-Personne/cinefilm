@@ -27,6 +27,9 @@ switch ($request) {
     case '' :
         require __DIR__ . '/view/index-view.php';
         break;
+    case '/' :
+        require __DIR__ . '/view/index-view.php';
+        break;
     case $request != '/movie-website/fork/' :
         $_GET['filmId'] = $request;
         require __DIR__ . '/controller/controller.php';
