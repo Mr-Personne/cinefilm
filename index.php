@@ -40,6 +40,7 @@ switch ($request) {
         // require __DIR__ . '/model/movies.php';
         // require __DIR__ . '/view/film.php';
         break;
+    //envoie sur la page d'accueil index-view.php par default
     default:
         // http_response_code(404);
         // require __DIR__ . '/view/404.php';
