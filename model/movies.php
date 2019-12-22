@@ -20,9 +20,15 @@
         //cette partie permet de faire fonctionner la recherche sql 'LIKE'
         $filmId = $search;
         $answer->bindParam(':filmId', $filmId, PDO::PARAM_STR);
-
+        
         $answer->execute();
         $allData = $answer->fetchAll();
+        //verifie s'il a bien récupéré une row du film dans notre base de donnée
+        //si c'est égal a 0, c'est que la page/le film demandé n'existe pas. Donc, page 404 et on arrete tous;
+        if (count($allData) === 0){
+            require __DIR__ . '/../view/404.php';
+            die();
+        }
 
         //section verif et ajout de genre(s) (si il y en a plusieurs, active boucle)
         $genre = $allData[0]["nomGenre"];
