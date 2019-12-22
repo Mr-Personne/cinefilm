@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body>
     <h1><?php echo $allData[0]["titre"]; ?></h1>
@@ -16,8 +18,11 @@
         tant que vous enregistrez les images au bonne endroit et avec le nom "affiche-" + l'id du film 
         qu'il a dans la database-->
         <!-- ex : Bad Boys; id = 1  donc "affiche-1" -->
-    <p><img src="public/images/affiche-<?= $allData[0]["id"] ?>.jpg" alt="affiche film"
-                width="600" height="800" class="affiches"></p>
+    <div class="container-affiches">
+        <p><img src="public/images/affiche-<?= $allData[0]["id"] ?>.jpg" alt="affiche film"
+                    width="" height="" class="affiches"></p>
+    </div>
+
     <p>Année de sortie : <?php echo $allData[0]["annee-sortie"]; ?></p>
     <p>Réalisateur : <?php echo $realisateur; ?></p>
 
