@@ -1,2 +1,20 @@
+# DocumentRoot "/var/www/html/movie-website/fork"
+
+# Turn rewriting on
+# Options +FollowSymLinks
 RewriteEngine On
-RewriteRule .* index.php
+# RewriteBase /
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(inc|css|img|js)($|/) - [L]
+
+# RewriteCond %{REQUEST_URI} "/css/" [OR]
+# RewriteCond %{REQUEST_URI} "/img/"
+# RewriteCond %{REQUEST_URI} ^/css
+
+RewriteCond %{REQUEST_URI} !index.php
+RewriteRule .* index.php [NC]
+
+# RewriteRule ^(.*)$ view/film-info.php [NC]

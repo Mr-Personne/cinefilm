@@ -7,6 +7,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="public/css/style.css">
+    <!-- <base href="/" /> -->
 </head>
 <body>
     <h1>hello world ciné</h1>
