@@ -21,7 +21,7 @@
     <div class="container d-flex mt-20px">
         <a href="index.php?page=4">
             <div class="container-affiches mr-20px">
-                <div><img src="public/images/affiche-colorful.jpg" alt="affiche film"
+                <div><img src="/public/images/affiche-colorful.jpg" alt="affiche film"
                 width="600" height="800" class="affiches"></div>
                 <h3 class="text-align-center">Colorful</h3>
             </div>
@@ -29,7 +29,7 @@
 
         <a href="index.php?page=7">
             <div class="container-affiches">
-                <div><img src="public/images/affiche-once-upon-a-time-hollywood.jpg" alt="affiche film"
+                <div><img src="http://localhost:8080/public/images/affiche-once-upon-a-time-hollywood.jpg" alt="affiche film"
                 width="405" height="600" class="affiches"></div>
                 <h3 class="text-align-center">Once Upon a Time… in Hollywood</h3>
             </div>
