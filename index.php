@@ -1,4 +1,4 @@
-<!-- <base href="http://localhost:8080/movie-website/fork/"> -->
+<!-- <base href="/movie-website/fork/"> -->
 <?php
 
 // $request = $_SERVER['REQUEST_URI'];
