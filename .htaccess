@@ -1,10 +1,13 @@
 
-# RewriteEngine On
-# RewriteBase "/movie-website/fork/"
+RewriteEngine On
+
+# Redirect /(.*) /
+# RedirectMatch /.* /view
 
 
-# RewriteCond %{REQUEST_URI} !index.php
-# RewriteRule ^(.*)$ / [R]
+# RewriteCond %{REQUEST_URI} /
+# RewriteRule ^(.*)$ index.php
+# RewriteRule ^(.*)$ view/
 
 
 
