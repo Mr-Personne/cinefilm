@@ -1,0 +1,25 @@
+https://www.samsufy.fr/installer-et-activer-le-module-mod_rewrite-sur-apache-debian/
+
+or
+
+
+first activate mod_rewrite in apache2 :
+
+https://hostadvice.com/how-to/how-to-enable-apache-mod_rewrite-on-an-ubuntu-18-04-vps-or-dedicated-server/
+
+next, figure out what you wanted the htaccess to do in the first place...
+
+https://docs.ovh.com/fr/hosting/htaccess-reecriture-url-mod-rewrite/
+https://httpd.apache.org/docs/current/fr/rewrite/
+
+(doc des trucs ex: RewriteEngine RewriteBase RewriteCond RewriteRule etc)
+http://httpd.apache.org/docs/current/mod/mod_rewrite.html
+
+
+(htaccess tricks?)
+https://perishablepress.com/stupid-htaccess-tricks/
+
+
+https://doc.ubuntu-fr.org/apache2
+
+https://httpd.apache.org/docs/2.4/en/expr.html
