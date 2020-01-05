@@ -23,3 +23,5 @@ https://perishablepress.com/stupid-htaccess-tricks/
 https://doc.ubuntu-fr.org/apache2
 
 https://httpd.apache.org/docs/2.4/en/expr.html
+
+https://htaccessbook.com/useful-htaccess-rules/
