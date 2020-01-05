@@ -1,19 +1,49 @@
-
 RewriteEngine On
+Options -Indexes
+Options -MultiViews
+Options +FollowSymlinks
+AddDefaultCharset UTF-8
+ServerSignature Off
+FileETag none
 
-# Redirect /(.*) /
-# RedirectMatch /.* /view
+# MIME TYPES
+<IfModule mod_mime.c>
+AddType text/css .css
+AddType image/jpeg .jpeg .jpg .jpe .JPG
+</IfModule>
+
+# RewriteBase /movie-website/fork/
+
+#RewriteCond %{REQUEST_URI} !/movie-website/fork/$
+#RewriteRule ^(.*)$ /movie-website/fork/ [R,L]
+
+#Redirect /movie-website/fork/view/ /movie-website/fork/
+RewriteCond %{REQUEST_URI} /movie-website/fork/view/
+RedirectMatch /movie-website/fork/view/ /movie-website/fork/
+RewriteCond %{REQUEST_URI} /movie-website/fork/model/
+RedirectMatch /movie-website/fork/model/ /movie-website/fork/
+RewriteCond %{REQUEST_URI} /movie-website/fork/controller/
+RedirectMatch /movie-website/fork/controller/ /movie-website/fork/
+# activer les deux en bas = images qui s'affiches plus?
+#RewriteCond %{REQUEST_URI} /movie-website/fork/public/
+#RedirectMatch /movie-website/fork/public/ /movie-website/fork/
 
 
+
+
+
+
+
+
+
+# section tests divers dans le but de faire rewriterule et pouvoir voir les images... 
+# -------------------------------------------------------------------------------------
 # RewriteCond %{REQUEST_URI} /
 # RewriteRule ^(.*)$ index.php
 # RewriteRule ^(.*)$ view/
 
 
-
-
 # DocumentRoot "/var/www/html/movie-website/fork"
-
 
 # Turn rewriting on
 # Options +FollowSymLinks
@@ -30,3 +60,6 @@ RewriteEngine On
 
 # RewriteCond %{REQUEST_URI} !index.php
 # RewriteRule ^(.*)$ view/film-info.php [NC]
+
+# Redirect /movie-website/fork/view/ /movie-website/fork/
+#RewriteRule (?:^|/)image\.jpg$ - [T=image/jpg]
