@@ -6,17 +6,17 @@
     
     //vérifie si le fichier pour l'image de l'affiche est existe bien en jpg ou png
     //si oui, met le lien vers l'image dans $lienAffiche et va chercher sa taille en largeur et hauteur
-    if (file_exists("public/images/affiche-".$allData[0]['id'].".png")){
-        $lienAffiche = "public/images/affiche-".$allData[0]['id'].".png";
-        $imgSize = getimagesize("public/images/affiche-".$allData[0]['id'].".png");
+    if (file_exists("public/images/trailer-".$allData[0]['id'].".png")){
+        $lienAffiche = "public/images/trailer-".$allData[0]['id'].".png";
+        $imgSize = getimagesize("public/images/trailer-".$allData[0]['id'].".png");
         $imgWidth = $imgSize[0];
         $imgHeight = $imgSize[1];
         // echo "<p>lien affiche : " . $lienAffiche . "; imgW : " . $imgWidth . "; imgh : " . $imgHeight ."</p>";
         clearstatcache();
     }
-    else if (file_exists("public/images/affiche-".$allData[0]['id'].".jpg")){
-        $lienAffiche = "public/images/affiche-".$allData[0]['id'].".jpg";
-        $imgSize = getimagesize("public/images/affiche-".$allData[0]['id'].".jpg");
+    else if (file_exists("public/images/trailer-".$allData[0]['id'].".jpg")){
+        $lienAffiche = "public/images/trailer-".$allData[0]['id'].".jpg";
+        $imgSize = getimagesize("public/images/trailer-".$allData[0]['id'].".jpg");
         $imgWidth = $imgSize[0];
         $imgHeight = $imgSize[1];
         // echo "<p>lien affiche : " . $lienAffiche . "; imgW : " . $imgWidth . "; imgh : " . $imgHeight ."</p>";
