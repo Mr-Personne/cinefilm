@@ -45,7 +45,9 @@
             <div class="row">
                 <?php
                     for($i = 0; $i < count($allData); $i++){
-                        echo "<div class='col-4'><h3>". $allData[$i]["titre"] ."</h3></div>";
+                        echo '<div class="col-4"><a href="index.php?page='. $allData[$i]["id"] .'"><div><img src="public/images/trailer-'. $allData[$i]["id"] .'.jpg" alt="affiche film"
+                        class="affiches"></div>
+                        <h3 class="text-align-center">'. $allData[$i]["titre"] .'</h3></a></div>';
                     }
                 ?>
             </div>
