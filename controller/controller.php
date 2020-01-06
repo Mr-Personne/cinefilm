@@ -37,7 +37,7 @@
         //va chercher infos dans database sur tous les films
         require __DIR__ . '/../model/movies.php';
         require __DIR__ . '/../view/index-view.php';
-        print_r($allData);
+        // print_r($allData);
     }
     
 
