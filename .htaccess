@@ -14,16 +14,17 @@ AddType image/jpeg .jpeg .jpg .jpe .JPG
 
 # RewriteBase /movie-website/fork/
 
-#RewriteCond %{REQUEST_URI} !/movie-website/fork/$
-#RewriteRule ^(.*)$ /movie-website/fork/ [R,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/movie-website/fork/$
+RewriteRule ^(.*)$ /movie-website/fork/ [R,L]
 
 #Redirect /movie-website/fork/view/ /movie-website/fork/
-RewriteCond %{REQUEST_URI} /movie-website/fork/view/
-RedirectMatch /movie-website/fork/view/ /movie-website/fork/
-RewriteCond %{REQUEST_URI} /movie-website/fork/model/
-RedirectMatch /movie-website/fork/model/ /movie-website/fork/
-RewriteCond %{REQUEST_URI} /movie-website/fork/controller/
-RedirectMatch /movie-website/fork/controller/ /movie-website/fork/
+#RewriteCond %{REQUEST_URI} /movie-website/fork/view/
+#RedirectMatch /movie-website/fork/view/ /movie-website/fork/
+#RewriteCond %{REQUEST_URI} /movie-website/fork/model/
+#RedirectMatch /movie-website/fork/model/ /movie-website/fork/
+#RewriteCond %{REQUEST_URI} /movie-website/fork/controller/
+#RedirectMatch /movie-website/fork/controller/ /movie-website/fork/
 # activer les deux en bas = images qui s'affiches plus?
 #RewriteCond %{REQUEST_URI} /movie-website/fork/public/
 #RedirectMatch /movie-website/fork/public/ /movie-website/fork/
