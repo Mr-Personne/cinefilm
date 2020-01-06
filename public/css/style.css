@@ -1,26 +1,58 @@
-.container-affiches{
-    width: 200px;
-    height: 100%;
-}
-
-
-.affiches{
-    width: 100%;
-    height: 100%;
-}
-
 .d-flex{
     display: flex;
+}
+
+
+
+.text-align-center{
+    text-align: center;
+}
+
+/*system margin*/
+.mt-20px{
+    margin-top: 20px;
 }
 
 .mr-20px{
     margin-right: 20px;
 }
 
-.mt-20px{
-    margin-top: 20px;
+.mb-40px{
+    margin-bottom: 40px;
+}
+/*fin system margin*/
+
+/*--------------FILM INFO CSS----------*/
+/*header*/
+.header-box{
+    box-shadow: 3px 10px 7px 0px grey;
+}
+/*fin header*/
+
+
+
+/*section main*/
+.description-box{
+    box-shadow: 0px 20px 14px -15px grey;
 }
 
-.text-align-center{
+.container-affiches{
+    width: 200px;
+    height: 100%;
+}
+
+.affiches{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 5px 15px -2px grey;
+}
+
+.icon-bande-annonce{
+    width: 200px;
+    border: black solid 2px;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: bold;
     text-align: center;
 }
+/*fin section main*/
