@@ -40,6 +40,18 @@
         </a>
     </div>
 
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <?php
+                    for($i = 0; $i < count($allData); $i++){
+                        echo "<div class='col-4'><h3>". $allData[$i]["titre"] ."</h3></div>";
+                    }
+                ?>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
