@@ -56,10 +56,19 @@
                 <div class="row">
                     <div class="col-12">
                         <form action="index.php" method="get">
-                            <p>trier par :
-                            <button type="submit" name='trie' value='tous'>Tous</button>
-                            <button type="submit" name='trie' value='genre'>Genre</button>
-                            <button type="submit" name='trie' value='realisateur'>Réalisateur</button>
+                            <p>Genres :
+                            <button type="submit" name='genre' value='tous'>Tous</button>
+                            <button type="submit" name='genre' value='Action'>Action</button>
+                            <button type="submit" name='genre' value='Aventure'>Aventure</button>
+                            <button type="submit" name='genre' value='Comédie'>Comédie</button>
+                            <button type="submit" name='genre' value='Drame'>Drame</button>
+                            <button type="submit" name='genre' value='Fantastique'>Fantastique</button>
+                            <button type="submit" name='genre' value='Guerre'>Guerre</button>
+                            <button type="submit" name='genre' value='Historique'>Historique</button>
+                            <button type="submit" name='genre' value='Péplum'>Péplum</button>
+                            <button type="submit" name='genre' value='Policier'>Policier</button>
+                            <button type="submit" name='genre' value='Science Fiction'>Science Fiction</button>
+                            <button type="submit" name='genre' value='Thriller'>Thriller</button>
                         </form>
                     </div>
                 </div>
