@@ -33,22 +33,22 @@
                                 <a class="nav-link nav-active-color" href="index.php">HOME <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#about-us">ABOUT</a>
+                                <a class="nav-link" href="#">ABOUT</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#work">WORK</a>
+                                <a class="nav-link" href="#">WORK</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#process">PROCESS</a>
+                                <a class="nav-link" href="#">PROCESS</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#services">SERVICES</a>
+                                <a class="nav-link" href="#">SERVICES</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#testimonials">TESTIMONIALS</a>
+                                <a class="nav-link" href="#">TESTIMONIALS</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="#contact">CONTACT</a>
+                                <a class="nav-link" href="#">CONTACT</a>
                                 </li>
                             </ul>
                         </div>
