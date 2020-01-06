@@ -26,13 +26,16 @@ else{
 
 switch ($request) {
     case '/movie-website/fork/' :
-        require __DIR__ . '/view/index-view.php';
+        // require __DIR__ . '/view/index-view.php';
+        require __DIR__ . '/controller/controller.php';
         break;
     case '' :
-        require __DIR__ . '/view/index-view.php';
+        // require __DIR__ . '/view/index-view.php';
+        require __DIR__ . '/controller/controller.php';
         break;
     case '/' :
-        require __DIR__ . '/view/index-view.php';
+        // require __DIR__ . '/view/index-view.php';
+        require __DIR__ . '/controller/controller.php';
         break;
     //si $request est un nombre, alors fait en sorte de chercher et d'afficher la page du film avec cette id
     case is_numeric($request) :

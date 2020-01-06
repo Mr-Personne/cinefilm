@@ -27,6 +27,59 @@
 .header-box{
     box-shadow: 3px 7px 7px 0px grey;
 }
+
+
+
+.form-flex{
+    margin-top: 15px;
+    display: flex;
+    /* justify-content: center; */
+}
+
+input[type="text"] {
+    width: 55%;
+    font-size: 20px;
+    border: none;
+    
+    /* border-radius: 0 0 10px 10px; */
+    box-shadow: -3px 7px 2px -5px rgba(32,33,36,0.28);
+}
+
+#search-result {
+    width: 52%;
+    position: absolute;
+    background-color: white;
+    z-index: 1000;
+    /* border-radius: 0 0 10px 10px; */
+    box-shadow: inset 0px -7px 2px -5px rgba(32,33,36,0.28);
+}
+
+#search-result p:hover{
+    background-color: rgb(231, 202, 155);
+    cursor: pointer;
+}
+
+#search-result .container-fluid {
+    padding: 0;
+}
+
+#search-result p {
+    padding: 10px;
+}
+
+.magnifying-glass{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/magnify.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+
+.magnifying-glass:hover{
+    cursor: pointer;
+}
 /*fin header*/
 
 

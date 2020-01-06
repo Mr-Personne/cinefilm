@@ -35,7 +35,14 @@
                     </div>
 
                     <div class="col-6">
-                        <h1>hello world ciné</h1>
+                        <!-- <h1>hello world ciné</h1> -->
+                        <form action="#" class="form-flex">
+                            <input type="text" name="searchInput" autocomplet="off">
+                            <!-- <button type="submit" id="submit"><span>&#161;</span>El gooG it!</button> -->
+                            <div class="magnifying-glass"></div>
+                        </form>
+
+                        <div id="search-result"> </div>
                     </div>
                 </div>
             </div>
@@ -82,5 +89,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+    <script src="public/js/script.js"></script>
 </body>
 </html>
