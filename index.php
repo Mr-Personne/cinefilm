@@ -45,7 +45,8 @@ switch ($request) {
     default:
         // http_response_code(404);
         // require __DIR__ . '/view/404.php';
-        require __DIR__ . '/view/index-view.php';
+        require __DIR__ . '/controller/controller.php';
+        // require __DIR__ . '/view/index-view.php';
         break;
 }
 
