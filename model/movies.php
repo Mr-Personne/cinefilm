@@ -19,7 +19,7 @@
 
         //cette partie permet de faire fonctionner la recherche sql 'LIKE'
         $filmId = $search;
-        $answer->bindParam(':filmId', $filmId, PDO::PARAM_STR);
+        $answer->bindParam(':filmId', $filmId, PDO::PARAM_INT);
         
         $answer->execute();
         $allData = $answer->fetchAll();
