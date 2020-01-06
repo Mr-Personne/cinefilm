@@ -5,21 +5,22 @@
         $search = $_GET['filmId'];
     }
     else{
-        $search = 0;
+        $search = "index";
     }
     
 
     try{
         $db = new PDO('mysql:host=localhost;dbname=dbFilms;charset=utf8', 'root', '1234');
         
-        if($search == 0){
+        
+        if($search == "index"){
             //------méthode plus sécurisé contre injection SQL------
-            // $answer = $db->prepare('SELECT * FROM `films` WHERE id = :filmId');
             $answer = $db->prepare('SELECT * FROM `films`
             INNER JOIN films_has_genre ON films_has_genre.films_id = films.id
             INNER JOIN genre ON genre.idgenre = films_has_genre.genre_idgenre
             INNER JOIN films_has_realisateur ON films_has_realisateur.films_id = films.id
             INNER JOIN realisateur ON realisateur.idrealisateur = films_has_realisateur.realisateur_idrealisateur
+            GROUP BY titre
             ORDER BY `films`.`id` ASC');
             
             
