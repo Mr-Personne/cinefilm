@@ -22,7 +22,7 @@
         <button type="submit" name='page' value='2'>300</button>
     </form>
 
-    <div class="container-fluid d-flex mt-20px">
+    <!-- <div class="container-fluid d-flex mt-20px">
         <a href="index.php?page=4">
             <div class="container-affiches mr-20px">
                 <div><img src="public/images/affiche-colorful.jpg" alt="affiche film"
@@ -38,7 +38,7 @@
                 <h3 class="text-align-center">Once Upon a Time… in Hollywood</h3>
             </div>
         </a>
-    </div>
+    </div> -->
 
     <div class="container-fluid">
         <div class="container">
