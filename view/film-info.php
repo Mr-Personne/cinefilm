@@ -63,7 +63,7 @@
         <div class="container-fluid mt-20px">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 text-center">
                         <h1><?php echo $allData[0]["titre"]; ?></h1>
                     </div>
                 </div>
@@ -82,12 +82,12 @@
                 </div>
 
                 <div class="row mt-20px mb-40px">
-                    <div class="col-12">
+                    <div class="col-4 offset-4">
                         <div class="icon-bande-annonce">BANDE ANNONCE</div>
                     </div>
                 </div>
 
-                <div class="row description-box mt-20px">
+                <div class="row description-box mt-20px mb-40px">
                     <div class="col-12">
                         <p>Année de sortie : <?php echo $allData[0]["annee-sortie"]; ?></p>
                         <p>Réalisateur : <?php echo $realisateur; ?></p>
