@@ -14,45 +14,61 @@
     <!-- <base href="/" /> -->
 </head>
 <body>
-    <h1>hello world ciné</h1>
-    <form action="index.php" method="get">
-        <button type="submit" name='page' value='1'>Bad Boys</button>
-        <button type="submit" name='page' value='9'>Las Vegas Paranos</button>
-        <button type="submit" name='page' value='15'>Retour Vers le Futur</button>
-        <button type="submit" name='page' value='2'>300</button>
-    </form>
+<header>
+        <div class="container-fluid header-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <nav class="navbar navbar-expand-lg navbar-light w-100 align-items-center">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                <a class="nav-link nav-active-color" href="index.php">HOME <span class="sr-only">(current)</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        </nav>
+                    </div>
 
-    <!-- <div class="container-fluid d-flex mt-20px">
-        <a href="index.php?page=4">
-            <div class="container-affiches mr-20px">
-                <div><img src="public/images/affiche-colorful.jpg" alt="affiche film"
-                width="600" height="800" class="affiches"></div>
-                <h3 class="text-align-center">Colorful</h3>
-            </div>
-        </a>
-
-        <a href="index.php?page=7">
-            <div class="container-affiches">
-                <div><img src="public/images/affiche-once-upon-a-time-hollywood.jpg" alt="affiche film"
-                width="405" height="600" class="affiches"></div>
-                <h3 class="text-align-center">Once Upon a Time… in Hollywood</h3>
-            </div>
-        </a>
-    </div> -->
-
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <?php
-                    for($i = 0; $i < count($allData); $i++){
-                        echo '<div class="col-4"><a href="index.php?page='. $allData[$i]["id"] .'"><div><img src="public/images/trailer-'. $allData[$i]["id"] .'.jpg" alt="affiche film"
-                        class="affiches"></div>
-                        <h3 class="text-align-center">'. $allData[$i]["titre"] .'</h3></a></div>';
-                    }
-                ?>
+                    <div class="col-6">
+                        <h1>hello world ciné</h1>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </header>
+
+    <main>
+        
+        <div class="container-fluid mt-20px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <form action="index.php" method="get">
+                            <p>trier par :
+                            <button type="submit" name='trie' value='tous'>Tous</button>
+                            <button type="submit" name='trie' value='genre'>Genre</button>
+                            <button type="submit" name='trie' value='realisateur'>Réalisateur</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <?php
+                        for($i = 0; $i < count($allData); $i++){
+                            echo '<div class="col-4"><a href="index.php?page='. $allData[$i]["id"] .'"><div><img src="public/images/trailer-'. $allData[$i]["id"] .'.jpg" alt="affiche film"
+                            class="affiches"></div>
+                            <h3 class="text-align-center">'. $allData[$i]["titre"] .'</h3></a></div>';
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
+
+    </main>
 
 
     <!-- Optional JavaScript -->
