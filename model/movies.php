@@ -1,25 +1,45 @@
 <!-- Création du models movies.php qui contiendrait toutes fonctions des requêtes sur la table films -->
 <?php
     // print_r($_POST);
-    $search = $_GET['filmId'];
+    if(isset($_GET['filmId'])){
+        $search = $_GET['filmId'];
+    }
+    else{
+        $search = 0;
+    }
+    
 
     try{
         $db = new PDO('mysql:host=localhost;dbname=dbFilms;charset=utf8', 'root', '1234');
         
+        if($search == 0){
+            //------méthode plus sécurisé contre injection SQL------
+            // $answer = $db->prepare('SELECT * FROM `films` WHERE id = :filmId');
+            $answer = $db->prepare('SELECT * FROM `films`
+            INNER JOIN films_has_genre ON films_has_genre.films_id = films.id
+            INNER JOIN genre ON genre.idgenre = films_has_genre.genre_idgenre
+            INNER JOIN films_has_realisateur ON films_has_realisateur.films_id = films.id
+            INNER JOIN realisateur ON realisateur.idrealisateur = films_has_realisateur.realisateur_idrealisateur
+            ORDER BY `films`.`id` ASC');
+            
+            
+        }
+        else{
+            //------méthode plus sécurisé contre injection SQL------
+            // $answer = $db->prepare('SELECT * FROM `films` WHERE id = :filmId');
+            $answer = $db->prepare('SELECT * FROM `films`
+            INNER JOIN films_has_genre ON films_has_genre.films_id = films.id
+            INNER JOIN genre ON genre.idgenre = films_has_genre.genre_idgenre
+            INNER JOIN films_has_realisateur ON films_has_realisateur.films_id = films.id
+            INNER JOIN realisateur ON realisateur.idrealisateur = films_has_realisateur.realisateur_idrealisateur
+            WHERE id = :filmId
+            ORDER BY `films`.`id` ASC');
 
-        //------méthode plus sécurisé contre injection SQL------
-        // $answer = $db->prepare('SELECT * FROM `films` WHERE id = :filmId');
-        $answer = $db->prepare('SELECT * FROM `films`
-        INNER JOIN films_has_genre ON films_has_genre.films_id = films.id
-        INNER JOIN genre ON genre.idgenre = films_has_genre.genre_idgenre
-        INNER JOIN films_has_realisateur ON films_has_realisateur.films_id = films.id
-        INNER JOIN realisateur ON realisateur.idrealisateur = films_has_realisateur.realisateur_idrealisateur
-        WHERE id = :filmId
-        ORDER BY `films`.`id` ASC');
-
-        //cette partie permet de faire fonctionner la recherche sql 'LIKE'
-        $filmId = $search;
-        $answer->bindParam(':filmId', $filmId, PDO::PARAM_INT);
+            //cette partie permet de faire fonctionner la recherche sql 'LIKE'
+            $filmId = $search;
+            $answer->bindParam(':filmId', $filmId, PDO::PARAM_INT);
+        }
+        
         
         $answer->execute();
         $allData = $answer->fetchAll();
@@ -57,7 +77,7 @@
                 }
             }
         }
-        // print_r($allData);
+        print_r($allData);
 
 
 
