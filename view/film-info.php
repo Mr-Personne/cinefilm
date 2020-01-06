@@ -74,7 +74,7 @@
                             tant que vous enregistrez les images au bonne endroit et avec le nom "affiche-" + l'id du film 
                             qu'il a dans la database-->
                         <!-- ex : Bad Boys; id = 1  donc "affiche-1" -->
-                        <div class="container-affiches">
+                        <div class="">
                             <p><img src="<?= $lienAffiche ?>" alt="affiche film"
                                 width="<?= $imgWidth ?>" height="<?= $imgHeight ?>" class="affiches"></p>
                         </div>
