@@ -67,9 +67,9 @@ function ajaxCallAsynch() {
 };
 
 myForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+    // event.preventDefault();
 
-    ajaxCallAsynch();
+    // ajaxCallAsynch();
 
 
 });
