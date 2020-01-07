@@ -14,7 +14,16 @@
     <!-- <base href="/" /> -->
 </head>
 <body>
-<header>
+    <header class="container-fluid imheader">
+        <div class="container ">
+            <div class="row centelog d-flex flex-column justify-content-center">
+                <div class="col-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 col-xl-6 offset-xl-3 mt-50vh">
+                    <p class="text-center"><img src="public/images/logo-cine.png" class="w-100 h-100" alt="logo" height="403px" width="635px"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- <header>
         <div class="container-fluid header-box">
             <div class="container">
                 <div class="row">
@@ -35,10 +44,8 @@
                     </div>
 
                     <div class="col-6">
-                        <!-- <h1>hello world ciné</h1> -->
                         <form action="#" class="form-flex">
                             <input type="text" name="searchInput" autocomplet="off">
-                            <!-- <button type="submit" id="submit"><span>&#161;</span>El gooG it!</button> -->
                             <div class="magnifying-glass"></div>
                         </form>
 
@@ -47,15 +54,15 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 
     <main>
         
         <div class="container-fluid mt-20px">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <form action="index.php" method="get">
+                <div class="row mb-5 mt-5">
+                    <div id="genres" class="col-12">
+                        <form action="index.php#genres" method="get">
                             <p>Genres :
                             <button type="submit" name='genre' value='tous'>Tous</button>
                             <button type="submit" name='genre' value='Action'>Action</button>
@@ -75,7 +82,7 @@
                 <div class="row">
                     <?php
                         for($i = 0; $i < count($allData); $i++){
-                            echo '<div class="col-4"><a href="index.php?page='. $allData[$i]["id"] .'"><div><img src="public/images/trailer-'. $allData[$i]["id"] .'.jpg" alt="affiche film"
+                            echo '<div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-5"><a class="text-decoration-none" href="index.php?page='. $allData[$i]["id"] .'"><div class="zoom"><img src="public/images/affiche-'. $allData[$i]["id"] .'.jpg" alt="affiche film"
                             class="affiches"></div>
                             <h3 class="text-align-center">'. $allData[$i]["titre"] .'</h3></a></div>';
                         }
