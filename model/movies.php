@@ -29,7 +29,6 @@
         
         
         if($search == "tous"){
-            //------méthode plus sécurisé contre injection SQL------
             $answer = $db->prepare('SELECT * FROM `films`
             INNER JOIN films_has_genre ON films_has_genre.films_id = films.id
             INNER JOIN genre ON genre.idgenre = films_has_genre.genre_idgenre
