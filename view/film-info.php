@@ -59,7 +59,7 @@
                                 <li class="nav-item">
                                 <a class="nav-link" href="index.php?genre=Policier">Policier</a>
                                 </li>
-                                <li class="nav-item w-200px">
+                                <li class="nav-item w-125px">
                                 <a class="nav-link" href="index.php?genre=Science Fiction">Science-Fiction</a>
                                 </li>
                                 <li class="nav-item">
