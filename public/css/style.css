@@ -22,6 +22,12 @@
 }
 /*fin system margin*/
 
+/*system width*/
+.w-125px{
+    width: 125px;
+}
+/*fin system width*/
+
 /*--------------FILM INFO CSS----------*/
 /*header*/
 .header-box{
