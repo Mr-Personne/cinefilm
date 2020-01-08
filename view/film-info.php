@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
+    <base href="/movie-website/fork/">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -30,40 +31,40 @@
                             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                <a class="nav-link nav-active-color" href="index.php">HOME <span class="sr-only">(current)</span></a>
+                                <a class="nav-link nav-active-color" href="/movie-website/fork/film">HOME <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Action">Action</a>
+                                <a class="nav-link" href="index2.php?genre=Action">Action</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Aventure">Aventure</a>
+                                <a class="nav-link" href="index2.php?genre=Aventure">Aventure</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Comédie">Comédie</a>
+                                <a class="nav-link" href="index2.php?genre=Comédie">Comédie</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Drame">Drame</a>
+                                <a class="nav-link" href="index2.php?genre=Drame">Drame</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Fantastique">Fantastique</a>
+                                <a class="nav-link" href="index2.php?genre=Fantastique">Fantastique</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Guerre">Guerre</a>
+                                <a class="nav-link" href="index2.php?genre=Guerre">Guerre</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Historique">Historique</a>
+                                <a class="nav-link" href="index2.php?genre=Historique">Historique</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Péplum">Péplum</a>
+                                <a class="nav-link" href="index2.php?genre=Péplum">Péplum</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Policier">Policier</a>
+                                <a class="nav-link" href="index2.php?genre=Policier">Policier</a>
                                 </li>
                                 <li class="nav-item w-125px">
-                                <a class="nav-link" href="index.php?genre=Science Fiction">Science-Fiction</a>
+                                <a class="nav-link" href="index2.php?genre=Science Fiction">Science-Fiction</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Thriller">Thriller</a>
+                                <a class="nav-link" href="index2.php?genre=Thriller">Thriller</a>
                                 </li>
                             </ul>
                         </div>
