@@ -7,12 +7,21 @@ print_r($uriexp);
 
 //needs to make $uriexp[3] more flexible depending on if there are "sous-dossiers" or not
 switch ($uriexp[3]) {
-    case 'value':
-        # code...
+    case '/':
+        require_once __DIR__ . '/controller/base.php';
         break;
-    
+    case '':
+        require_once __DIR__ . '/controller/base.php';
+        break;
+    case 'index2.php':
+        require_once __DIR__ . '/controller/base.php';
+        break;
+    case 'film':
+        require_once __DIR__ . '/controller/film.php';
+        break;
+           
     default:
-        # code...
+        require_once __DIR__ . '/view/404.php';
         break;
 }
 
