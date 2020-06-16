@@ -97,7 +97,7 @@
                 </div>
 
                 <div class="row mt-20px mb-40px">
-                    <div class="col-4 offset-4">
+                    <div class="col-12">
                         <div class="icon-bande-annonce">BANDE ANNONCE</div>
                     </div>
                 </div>
