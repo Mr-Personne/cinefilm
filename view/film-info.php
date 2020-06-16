@@ -30,40 +30,40 @@
                             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item active">
-                                <a class="nav-link nav-active-color" href="index.php">HOME <span class="sr-only">(current)</span></a>
+                                <a class="nav-link nav-active-color" href="index.php#genres">HOME <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Action">Action</a>
+                                <a class="nav-link" href="index.php?genre=Action#genres">Action</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Aventure">Aventure</a>
+                                <a class="nav-link" href="index.php?genre=Aventure#genres">Aventure</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Comédie">Comédie</a>
+                                <a class="nav-link" href="index.php?genre=Comédie#genres">Comédie</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Drame">Drame</a>
+                                <a class="nav-link" href="index.php?genre=Drame#genres">Drame</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Fantastique">Fantastique</a>
+                                <a class="nav-link" href="index.php?genre=Fantastique#genres">Fantastique</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Guerre">Guerre</a>
+                                <a class="nav-link" href="index.php?genre=Guerre#genres">Guerre</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Historique">Historique</a>
+                                <a class="nav-link" href="index.php?genre=Historique#genres">Historique</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Péplum">Péplum</a>
+                                <a class="nav-link" href="index.php?genre=Péplum#genres">Péplum</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Policier">Policier</a>
+                                <a class="nav-link" href="index.php?genre=Policier#genres">Policier</a>
                                 </li>
                                 <li class="nav-item w-125px">
-                                <a class="nav-link" href="index.php?genre=Science Fiction">Science-Fiction</a>
+                                <a class="nav-link" href="index.php?genre=Science Fiction#genres">Science-Fiction</a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="index.php?genre=Thriller">Thriller</a>
+                                <a class="nav-link" href="index.php?genre=Thriller#genres">Thriller</a>
                                 </li>
                             </ul>
                         </div>
