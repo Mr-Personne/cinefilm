@@ -74,7 +74,7 @@ myForm.addEventListener("submit", function (event) {
 
 });
 
-inputSearch.addEventListener("keyup", function (event) {
-    ajaxCallAsynch();
-    // console.log(event.target.value);
-});
+// inputSearch.addEventListener("keyup", function (event) {
+//     ajaxCallAsynch();
+//     console.log(event.target.value);
+// });
