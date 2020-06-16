@@ -48,6 +48,30 @@
     box-shadow: 3px 7px 7px 0px grey;
 }
 
+/* INDEX GENRE MENU  */
+#genres form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+#genres form p{
+    margin: 0;
+}
+#genres form button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0,0,0,.5);
+}
+#genres form button:hover{
+    color: rgba(0,0,0,.7);
+}
+#genres form button:focus {
+    outline: none;
+}
+
+
 .imheader{
     background-image: url(../images/header-cine.jpg);
     background-repeat: no-repeat;
