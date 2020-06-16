@@ -82,7 +82,7 @@
                 <div class="row">
                     <?php
                         for($i = 0; $i < count($allData); $i++){
-                            echo '<div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-5"><a class="text-decoration-none" href="index.php?page='. $allData[$i]["id"] .'"><div class="zoom"><img src="public/images/affiche-'. $allData[$i]["id"] .'.jpg" alt="affiche film"
+                            echo '<div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-5"><a class="text-decoration-none text-dark" href="index.php?page='. $allData[$i]["id"] .'"><div class="zoom"><img src="public/images/affiche-'. $allData[$i]["id"] .'.jpg" alt="affiche film"
                             class="affiches"></div>
                             <h3 class="text-align-center">'. $allData[$i]["titre"] .'</h3></a></div>';
                         }
