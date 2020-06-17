@@ -78,3 +78,19 @@ myForm.addEventListener("submit", function (event) {
 //     ajaxCallAsynch();
 //     console.log(event.target.value);
 // });
+
+const menuGenre = document.querySelector('.menu-genre span');
+const menuGenreList = document.querySelectorAll('#genres form button');
+
+menuGenre.addEventListener('click', (e) => {
+    const menuForm = document.querySelector('#genres form');
+    menuForm.classList.toggle('show-genres');
+});
+
+menuGenreList.forEach(element => {
+    element.addEventListener('click', (e) => {
+        const menuForm = document.querySelector('#genres form');
+        menuForm.classList.toggle('show-genres');
+        // menuForm.classList.toggle('hide-genres');
+    });
+});

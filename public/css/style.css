@@ -197,7 +197,7 @@ input[type="text"] {
         width: 100vw;
         height: 100vh;
         flex-direction: column;
-        transition: all 1s;
+        transition: all 0.5s;
     }
 
     .menu-genre{
@@ -221,5 +221,15 @@ input[type="text"] {
     }
     .menu-genre img{
         width: 30px;
+    }
+
+    .show-genres{
+        left: 0 !important;
+    }
+    .hide-genres{
+        color: white !important;
+    }
+    .hide-genres button{
+        color: white !important;
     }
 }

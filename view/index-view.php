@@ -31,7 +31,7 @@
             <div class="container ">
                 <div class="row">
                     <div class="col-12">
-                    <p class="menu-genre"><span><img src="public/images/menu-icon.svg" alt="menu"></span></p>
+                        <p class="menu-genre"><span><img src="public/images/menu-icon.svg" alt="menu"></span></p>
                         <form action="index.php#genres" method="get">
                             <p>Genres :</p>
                             <button type="submit" name='genre' value='tous'>Tous</button>
@@ -47,9 +47,9 @@
                             <button type="submit" name='genre' value='Science Fiction'>Science Fiction</button>
                             <button type="submit" name='genre' value='Thriller'>Thriller</button>
                         </form>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         <div class="container-fluid mt-20px">
             <div class="container">
