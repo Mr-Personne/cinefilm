@@ -70,6 +70,9 @@
 #genres form button:focus {
     outline: none;
 }
+.menu-genre{
+    display: none;
+}
 
 
 .imheader{
@@ -177,3 +180,46 @@ input[type="text"] {
 	transform: scale(1.1);
 }
 /*fin section main*/
+
+
+@media (max-width: 576px){
+    #genres form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        left: -600px;
+        z-index: 1000000000;
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        transition: all 1s;
+    }
+
+    .menu-genre{
+        display: block;
+        margin: 0;
+        padding: 15px 0;
+    }
+    .menu-genre span{
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        color: rgba(0,0,0,.5);
+        border-color: rgba(0,0,0,.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+    }
+    .menu-genre img{
+        width: 30px;
+    }
+}

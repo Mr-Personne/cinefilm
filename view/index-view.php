@@ -31,6 +31,7 @@
             <div class="container ">
                 <div class="row">
                     <div class="col-12">
+                    <p class="menu-genre"><span><img src="public/images/menu-icon.svg" alt="menu"></span></p>
                         <form action="index.php#genres" method="get">
                             <p>Genres :</p>
                             <button type="submit" name='genre' value='tous'>Tous</button>
